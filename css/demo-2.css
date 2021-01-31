@@ -1,13 +1,13 @@
 .demo-2 {
 	--color-text: #aaa;
-	--color-bg: #000;
+	--color-bg: #fff;
 	--color-link: #1c1cc9;
 	--color-link-hover: #aaa;
 	--color-info: #1c1cc9;
 	--glitch-width: 100vw;
 	--glitch-height: 100vh;
-	--gap-horizontal: 10px;
-	--gap-vertical: 5px;
+	--gap-horizontal: 0px;
+	--gap-vertical: 0px;
 	--color-title: #fff;
 	--time-anim: 4s;
 	--delay-anim: 2s;
@@ -43,7 +43,7 @@
 	left: 0;
 	width: var(--glitch-width);
 	height: var(--glitch-height);
-	overflow: hidden;
+	overflow: show;
 }
 
 .glitch__img {
@@ -52,9 +52,9 @@
 	left: calc(-1 * var(--gap-horizontal));
 	width: calc(100% + var(--gap-horizontal) * 2);
 	height: calc(100% + var(--gap-vertical) * 2);
-	background: url(../img/img2.jpg) no-repeat 50% 0;
+	background: url(../img/yono-logo.png) no-repeat 50% 0;
 	background-color: var(--blend-color-1);
-	background-size: cover;
+	background-size: contain;
 	transform: translate3d(0,0,0);
 	background-blend-mode: var(--blend-mode-1);
 }
